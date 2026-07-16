@@ -1,50 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cravings Destiny</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <title>CRAVINGS DESTINY | Your Satisfaction Is Our Biggest Cravings</title>
+
+    <meta
+        name="description"
+        content="Freshly prepared burgers, wraps, fries, fried chicken, sandwiches, milkshakes, mojitos and more. Order directly from Cravings Destiny."
+    >
+
+    <meta name="theme-color" content="#FF6B00">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
+
 <body>
-<header class="header">
-<div class="container">
-<h1>CRAVINGS DESTINY</h1>
-<p>Your Satisfaction Is Our Biggest Cravings</p>
+
+<!-- ===================================================== -->
+<!-- LOADER -->
+<!-- ===================================================== -->
+
+<div id="loader">
+
+    <div class="loader-box">
+
+        <div class="loader-logo">
+            CD
+        </div>
+
+        <h2>CRAVINGS DESTINY</h2>
+
+        <p>Your Satisfaction Is Our Biggest Cravings</p>
+
+    </div>
+
 </div>
+
+<!-- ===================================================== -->
+<!-- HEADER -->
+<!-- ===================================================== -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                CD
+            </div>
+
+            <div>
+
+                <h1>
+                    CRAVINGS DESTINY
+                </h1>
+
+                <span>
+                    Your Satisfaction Is Our Biggest Cravings
+                </span>
+
+            </div>
+
+        </div>
+
+        <a
+            href="#customer-section"
+            class="header-order-btn"
+        >
+            Order
+        </a>
+
+    </div>
+
 </header>
 
+<!-- ===================================================== -->
+<!-- HERO -->
+<!-- ===================================================== -->
+
 <section class="hero">
-<div class="container hero-card">
-<h2>Freshly Prepared. Packed with Flavor.</h2>
-<p>Select your favourite dishes, review your cart and send the complete order on WhatsApp.</p>
-<div class="hero-actions">
-<button id="locBtn" class="secondary">📍 Use My Location</button>
-<div id="locStatus">Delivery address will be requested before checkout.</div>
-</div>
-</div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <span class="hero-chip">
+                Fresh • Hot • Delicious
+            </span>
+
+            <h2>
+
+                Freshly Prepared.
+                <br>
+                Packed with Flavor.
+
+            </h2>
+
+            <p>
+
+                Enjoy burgers, wraps, fries, fried chicken,
+                sandwiches, milkshakes, mojitos and more.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#customer-section"
+                    class="primary-btn"
+                >
+
+                    Order on WhatsApp
+
+                </a>
+
+                <a
+                    href="#menu"
+                    class="secondary-btn"
+                >
+
+                    Explore Menu
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="hero-badge">
+
+                ⭐ Customer Favorite
+
+            </div>
+
+            <h3>
+                Evening Specials
+            </h3>
+
+            <ul>
+
+                <li>🍔 Burgers</li>
+                <li>🌯 Wraps</li>
+                <li>🍟 Fries</li>
+                <li>🍗 Fried Chicken</li>
+                <li>🥤 Milkshakes</li>
+                <li>🍹 Mojitos</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
 </section>
 
-<div class="container"><div id="menu"></div></div>
+<!-- ===================================================== -->
+<!-- SEARCH -->
+<!-- ===================================================== -->
 
-<div id="cartBar" class="cart-bar hidden">
-<div><strong id="cartCount">0</strong> items • ₹<span id="cartTotal">0</span></div>
-<button id="openCart">View Cart</button>
+<section class="search-section">
+
+    <div class="container">
+
+        <div class="search-box">
+
+            <svg
+                viewBox="0 0 24 24"
+                class="search-icon"
+            >
+                <path
+                    d="M21 21l-4.35-4.35m1.35-5.15a7 7 0 11-14 0 7 7 0 0114 0z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round"
+                />
+            </svg>
+
+            <input
+                id="searchInput"
+                type="text"
+                placeholder="Search menu items instantly..."
+                autocomplete="off"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- CATEGORY BAR -->
+<!-- ===================================================== -->
+
+<nav class="category-nav">
+
+    <div class="container">
+
+        <div id="categoryTabs" class="category-scroll">
+
+            <button class="category active" data-category="All">
+                All
+            </button>
+
+            <button class="category" data-category="Fries">
+                Fries
+            </button>
+
+            <button class="category" data-category="Momos">
+                Momos
+            </button>
+
+            <button class="category" data-category="Nuggets">
+                Nuggets
+            </button>
+
+            <button class="category" data-category="Fried Chicken">
+                Fried Chicken
+            </button>
+
+            <button class="category" data-category="Wraps">
+                Wraps
+            </button>
+
+            <button class="category" data-category="Spring Rolls">
+                Spring Rolls
+            </button>
+
+            <button class="category" data-category="Sandwiches">
+                Sandwiches
+            </button>
+
+            <button class="category" data-category="Burgers">
+                Burgers
+            </button>
+
+            <button class="category" data-category="Bread Omelette">
+                Bread Omelette
+            </button>
+
+            <button class="category" data-category="Fried Rice">
+                Fried Rice
+            </button>
+
+            <button class="category" data-category="Chicken 65">
+                Chicken 65
+            </button>
+
+            <button class="category" data-category="Milkshakes">
+                Milkshakes
+            </button>
+
+            <button class="category" data-category="Mojitos">
+                Mojitos
+            </button>
+
+            <button class="category" data-category="Tea">
+                Tea
+            </button>
+
+            <button class="category" data-category="Add-ons">
+                Add-ons
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ===================================================== -->
+<!-- MENU -->
+<!-- ===================================================== -->
+
+<section
+    id="menu"
+    class="menu-section"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Our Menu
+            </h2>
+
+            <p>
+
+                Freshly made with quality ingredients.
+
+            </p>
+
+        </div>
+
+        <div
+            id="menuContainer"
+            class="menu-grid"
+        >
+
+            <!-- Generated from script.js -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- FLOATING CART -->
+<!-- ===================================================== -->
+
+<div
+    id="floatingCart"
+    class="floating-cart hidden"
+>
+
+    <div class="cart-summary">
+
+        <span id="cartCount">
+            0 Items
+        </span>
+
+        <strong id="cartTotal">
+            ₹0
+        </strong>
+
+    </div>
+
+    <button id="openCart">
+
+        View Cart
+
+    </button>
+
 </div>
 
-<div id="drawer" class="drawer">
-<div class="drawer-content">
-<h2>Your Cart</h2>
-<div id="cartItems"></div>
-<label>Name</label><input id="custName" placeholder="Your name">
-<label>Phone</label><input id="custPhone" placeholder="Mobile number">
-<label>Delivery Address</label><textarea id="custAddr" rows="3" placeholder="House / Street / Landmark"></textarea>
-<input id="custGps" type="hidden">
-<button id="waBtn">Proceed to Order on WhatsApp</button>
-<button id="closeCart" class="secondary">Continue Shopping</button>
-</div></div>
+<!-- ===================================================== -->
+<!-- CART DRAWER -->
+<!-- ===================================================== -->
+
+<aside
+    id="cartDrawer"
+    class="cart-drawer"
+>
+
+    <div class="drawer-header">
+
+        <h2>
+
+            Your Cart
+
+        </h2>
+
+        <button
+            id="closeCart"
+            aria-label="Close Cart"
+        >
+            ✕
+        </button>
+
+    </div>
+
+    <div
+        id="cartItems"
+        class="cart-items"
+    >
+
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total-row">
+
+            <span>
+
+                Grand Total
+
+            </span>
+
+            <strong id="drawerTotal">
+
+                ₹0
+
+            </strong>
+
+        </div>
+
+        <button
+            id="goCustomer"
+            class="checkout-btn"
+        >
+
+            Continue
+
+        </button>
+
+    </div>
+
+</aside>
+
+<div
+    id="overlay"
+    class="overlay"
+></div>
+
+<!-- ===================================================== -->
+<!-- CUSTOMER DETAILS -->
+<!-- ===================================================== -->
+
+<section
+    id="customer-section"
+    class="customer-section"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+
+                Delivery Details
+
+            </h2>
+
+            <p>
+
+                Fill your details before placing the order.
+
+            </p>
+
+        </div>
+
+        <form
+            id="customerForm"
+            autocomplete="on"
+        >
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="customerName">
+                        Name *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="customerPhone">
+                        Phone *
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="customerPhone"
+                        maxlength="10"
+                        inputmode="numeric"
+                        placeholder="10 Digit Mobile Number"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="customerAddress">
+
+                    Delivery Address *
+
+                </label>
+
+                <textarea
+                    id="customerAddress"
+                    rows="4"
+                    placeholder="House No, Street, Area..."
+                    required
+                ></textarea>
+
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="customerLandmark">
+
+                        Landmark
+
+                    </label>
+
+                    <input
+                        id="customerLandmark"
+                        type="text"
+                        placeholder="Nearby Landmark"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="customerNotes">
+
+                        Additional Notes
+
+                    </label>
+
+                    <input
+                        id="customerNotes"
+                        type="text"
+                        placeholder="Less spicy, extra mayo..."
+                    >
+
+                </div>
+
+            </div>
+
+            <!-- ======================================== -->
+            <!-- LOCATION -->
+            <!-- ======================================== -->
+
+            <div class="location-box">
+
+                <button
+                    type="button"
+                    id="locationBtn"
+                    class="location-btn"
+                >
+
+                    📍 Use My Current Location
+
+                </button>
+
+                <small
+                    id="locationStatus"
+                >
+
+                    Location not added.
+
+                </small>
+
+            </div>
+
+            <!-- ======================================== -->
+            <!-- WHATSAPP BUTTON -->
+            <!-- ======================================== -->
+
+            <button
+                type="submit"
+                class="whatsapp-btn"
+                id="whatsappCheckout"
+            >
+
+                Proceed to Order on WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>
+
+                CRAVINGS DESTINY
+
+            </h3>
+
+            <p>
+
+                Your Satisfaction Is Our Biggest Cravings
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>
+
+                Contact
+
+            </h4>
+
+            <ul>
+
+                <li>
+
+                    📞
+                    <a href="tel:+917305551983">
+
+                        7305551983
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    📷
+                    <a
+                        href="https://instagram.com/cravingsdestiny.cbe"
+                        target="_blank"
+                        rel="noopener"
+                    >
+
+                        @cravingsdestiny.cbe
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    💬
+                    <a
+                        href="https://wa.me/917305551983"
+                        target="_blank"
+                        rel="noopener"
+                    >
+
+                        WhatsApp
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4>
+
+                Categories
+
+            </h4>
+
+            <ul>
+
+                <li>Fries</li>
+                <li>Fried Chicken</li>
+                <li>Wraps</li>
+                <li>Burgers</li>
+                <li>Milkshakes</li>
+                <li>Mojitos</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 CRAVINGS DESTINY.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<!-- ===================================================== -->
+<!-- TOAST -->
+<!-- ===================================================== -->
+
+<div
+    id="toast"
+    class="toast"
+>
+
+    Added to Cart
+
+</div>
+
+<!-- ===================================================== -->
+<!-- BACK TO TOP -->
+<!-- ===================================================== -->
+
+<button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Back to Top"
+>
+
+    ↑
+
+</button>
+
+<!-- ===================================================== -->
+<!-- SCRIPTS -->
+<!-- ===================================================== -->
+
 <script src="script.js"></script>
-</body></html>
+
+</body>
+</html>
