@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Cravings Destiny</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-</head><body>
-<header><h1>CRAVINGS DESTINY</h1><p>Your Satisfaction Is Our Biggest Cravings</p></header>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<h1>CRAVINGS DESTINY</h1>
+<p>Your Satisfaction Is Our Biggest Cravings</p>
+</div>
+</header>
+
 <section class="hero">
-<h2>Order your favourites</h2>
-<p>Select multiple items and checkout on WhatsApp.</p>
+<div class="container hero-card">
+<h2>Freshly Prepared. Packed with Flavor.</h2>
+<p>Select your favourite dishes, review your cart and send the complete order on WhatsApp.</p>
+<div class="hero-actions">
+<button id="locBtn" class="secondary">📍 Use My Location</button>
+<div id="locStatus">Delivery address will be requested before checkout.</div>
+</div>
+</div>
 </section>
-<div id="menu"></div>
+
+<div class="container"><div id="menu"></div></div>
 
 <div id="cartBar" class="cart-bar hidden">
 <div><strong id="cartCount">0</strong> items • ₹<span id="cartTotal">0</span></div>
@@ -20,10 +39,12 @@
 <div class="drawer-content">
 <h2>Your Cart</h2>
 <div id="cartItems"></div>
-<div class="total">Total: ₹<span id="drawerTotal">0</span></div>
+<label>Name</label><input id="custName" placeholder="Your name">
+<label>Phone</label><input id="custPhone" placeholder="Mobile number">
+<label>Delivery Address</label><textarea id="custAddr" rows="3" placeholder="House / Street / Landmark"></textarea>
+<input id="custGps" type="hidden">
 <button id="waBtn">Proceed to Order on WhatsApp</button>
-<button id="closeCart">Continue Shopping</button>
+<button id="closeCart" class="secondary">Continue Shopping</button>
 </div></div>
-
 <script src="script.js"></script>
 </body></html>
